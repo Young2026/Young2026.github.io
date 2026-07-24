@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173a35" />
+    <meta name="description" content="为四位旅伴准备的中文济州岛四天旅行计划，包含路线、住宿、美食、风景与交通建议。" />
+    <meta property="og:title" content="济州四人旅行手记" />
+    <meta property="og:description" content="4 人 · 4 天 · 风景 · 住宿 · 美食" />
+    <meta property="og:image" content="https://young2026.github.io/og.png" />
+    <title>济州四人旅行手记｜四天路线、住宿与美食</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="济州四人旅行手记首页">
+          <span>济州</span><small>四人旅行手记</small>
+        </a>
+        <nav aria-label="主要导航">
+          <a href="#route">路线</a><a href="#stays">住宿</a><a href="#food">美食</a><a href="#views">风景</a>
+        </nav>
+        <button class="share-button" data-share>分享四人行程 ↗</button>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-image" role="img" aria-label="济州海岸与城山日出峰">
+          <div class="hero-stamp"><span>33.4996° N</span><span>126.5312° E</span></div>
+        </div>
+        <div class="hero-copy">
+          <p class="kicker">四人 · 四天济州岛旅行计划 · 2026 年 7 月更新</p>
+          <h1>济州，<br /><em>慢慢走。</em></h1>
+          <p class="hero-intro">为四位旅伴整理的实用行程：参考近期小红书旅行笔记，并结合济州官方旅游信息核对。</p>
+          <div class="trip-ticket" aria-label="行程概览">
+            <div><small>同行人数</small><strong>4 人</strong></div>
+            <div><small>旅行时长</small><strong>4 天</strong></div>
+            <div><small>住宿方案</small><strong>2 间房</strong></div>
+            <span class="ticket-mark">🍊</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="planner-section" aria-labelledby="planner-title">
+        <div class="section-heading">
+          <p class="kicker">选择想去的济州区域</p>
+          <h2 id="planner-title">我们去哪里？</h2>
+        </div>
+        <div class="area-tabs" role="tablist" aria-label="济州区域">
+          <button class="active" role="tab" aria-selected="true" data-area="east">济州东线</button>
+          <button role="tab" aria-selected="false" data-area="west">济州西线</button>
+          <button role="tab" aria-selected="false" data-area="south">济州南线</button>
+          <button role="tab" aria-selected="false" data-area="city">济州市区</button>
+        </div>
+        <article class="area-feature">
+          <div class="area-photo" id="area-photo" role="img" aria-label="济州东线海岸风景"></div>
+          <div class="area-copy">
+            <p class="kicker" id="area-eyebrow">01 · 日出海岸</p>
+            <h3 id="area-title">济州东线</h3>
+            <p id="area-intro">最适合第一次到济州的经典路线：牛岛、城山日出峰、涉地可支、月汀里与咸德。四人同行建议包车或乘大型出租车，减少换乘。</p>
+            <dl>
+              <div><dt>必看风景</dt><dd id="area-view">城山日出峰</dd></div>
+              <div><dt>推荐住宿</dt><dd id="area-stay">咸德 Ebenezer 酒店</dd></div>
+              <div><dt>推荐美食</dt><dd id="area-food">景美家海鲜拉面</dd></div>
+            </dl>
+            <a class="text-link" id="area-map" href="https://www.google.com/maps/search/?api=1&query=Seongsan%20Ilchulbong%20Jeju" target="_blank" rel="noreferrer">在地图中打开 ↗</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="signal-strip" aria-label="近期小红书旅行热度">
+        <div><strong>小红书热度参考</strong><span>近期搜索 · 2026 年 7 月 23 日</span></div>
+        <p><b>1.4k</b> 四日路线互动</p>
+        <p><b>2.3k</b> 四家酒店对比互动</p>
+        <p><b>6.5k</b> 首次济州预算攻略互动</p>
+      </section>
+
+      <section class="route-section" id="route">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">四人行程</p><h2>四天顺路走，不绕远。</h2></div>
+          <p>东线、西线、南线再回到市区，参考近期实用的小红书路线，也为天气变化和四人节奏留出余地。</p>
+        </div>
+        <div class="timeline">
+          <article class="day-card"><span>第 1 天</span><h3>东线 · 海岛与日出峰</h3><p class="route-line">牛岛 → 城山日出峰 → 涉地可支 → 月汀里 → 咸德</p><p>四人早出发赶船；建议包车接送码头，把咸德留给傍晚散步和晚餐。</p></article>
+          <article class="day-card"><span>第 2 天</span><h3>西线 · 海景与日落</h3><p class="route-line">涯月 → 挟才海水浴场 → 翰林公园 → 风车海岸 → 雪绿茶博物馆</p><p>只选一家海景咖啡馆，给四个人留出聊天与拍照时间；日落前抵达西海岸。</p></article>
+          <article class="day-card"><span>第 3 天</span><h3>南线 · 玄武岩与瀑布</h3><p class="route-line">中文旅游区 → 柱状节理带 → 每日偶来市场 → 独立岩</p><p>如果四人更喜欢自然风景，可用正房瀑布替换购物时间，晚餐在市场分食小吃。</p></article>
+          <article class="day-card"><span>第 4 天</span><h3>市区 · 轻松返程</h3><p class="route-line">东门市场 → 七星路 → 莲洞 → 济州机场</p><p>最后一天不要排太满；四人带行李建议提前预约大型出租车，预留退房或退税时间。</p></article>
+        </div>
+      </section>
+
+      <section class="stays-section" id="stays">
+        <div class="section-heading split-heading">
+          <div><p class="kicker">四人住得舒服</p><h2>选好落脚点，也选对房型。</h2></div>
+          <p>建议四人预订两间房：海边住两晚、市区住两晚；若不想换酒店，也可四晚都住西归浦。</p>
+        </div>
+        <div class="stay-grid">
+          <article class="stay-card"><div class="stay-top"><span>咸德 · 东线</span><button data-save="Ebenezer Hotel 咸德" aria-label="收藏 Ebenezer Hotel 咸德">♡</button></div><h3>Ebenezer Hotel 咸德</h3><p>小红书常见的实用海景选择，就在咸德海边，步行可到餐厅与便利店。四人建议订两间海景双床房。</p><div class="stay-bottom"><span>适合海边晨景</span><small>中等预算</small></div></article>
+          <article class="stay-card"><div class="stay-top"><span>中文区 · 南线</span><button data-save="The Shilla Jeju 济州新罗" aria-label="收藏济州新罗">♡</button></div><h3>The Shilla Jeju 济州新罗</h3><p>南岸经典度假酒店，服务完整，打车去柱状节理带也方便。四人可比较两间标准房与家庭套房价格。</p><div class="stay-bottom"><span>适合度假升级</span><small>奢华</small></div></article>
+          <article class="stay-card"><div class="stay-top"><span>济州市 · 北部</span><button data-save="Grand Hyatt Jeju 济州君悦" aria-label="收藏济州君悦">♡</button></div><h3>Grand Hyatt Jeju 济州君悦</h3><p>靠近机场的高层酒店，餐饮齐全，也方便一日游接送。四人订两间房时可询问连通房或相邻房。</p><div class="stay-bottom"><span>适合不自驾</span><small>城市</small></div></article>
+          <article class="stay-card"><div class="stay-top"><span>西归浦 · 南部</span><button data-save="Hotel Bridge Seogwipo" aria-label="收藏 Hotel Bridge Seogwipo">♡</button></div><h3>Hotel Bridge Seogwipo</h3><p>靠近市场、瀑布与市中心步行路线的高性价比海景住宿。四人分订两间房，行程衔接最简单。</p><div class="stay-bottom"><span>适合控制预算</span><small>高性价比</small></div></article>
+        </div>
+        <p class="save-status" id="save-status" aria-live="polite">收藏适合我们的住宿。价格变化较快，预订两间房前请比较房型、连通房选项、取消政策与近期评价。</p>
+      </section>
+
+      <section class="food-section" id="food">
+        <div class="food-intro">
+          <p class="kicker">四人一起吃济州</p><h2>六种值得专程去吃的味道。</h2>
+          <p>小红书提供近期热度，济州官方旅游与餐饮信息帮助确认本地特色。四人同行可多点几道一起分享。</p>
+          <span class="tangerine-mark">济州<br />橘子<br />小队</span>
+        </div>
+        <div class="food-list">
+          <article><span>01</span><div><h3>济州黑猪烤肉</h3><strong>熟成到 / 本地烤肉店</strong><p>四人适合点2–3份不同部位一起分享，再加泡菜汤或冷面收尾。</p></div><a href="https://www.google.com/maps/search/?api=1&query=Suksungdo%20Jeju" target="_blank" rel="noreferrer">↗</a></article>
+          <article><span>02</span><div><h3>海鲜拉面</h3><strong>景美家 · 城山</strong><p>城山日出峰附近的人气店，以章鱼、鱿鱼和贝类拉面闻名，四人可再搭配海鲜拼盘。</p></div><a href="https://www.google.com/maps/search/?api=1&query=Gyeongminejip%20Jeju" target="_blank" rel="noreferrer">↗</a></article>
+          <article><span>03</span><div><h3>鲍鱼粥</h3><strong>明珍鲍鱼 · 东海岸</strong><p>温和鲜香的济州早餐。四人建议早点到店，并在出发前确认当天营业时间。</p></div><a href="https://www.google.com/maps/search/?api=1&query=Myeongjin%20Jeonbok%20Jeju" target="_blank" rel="noreferrer">↗</a></article>
+          <article><span>04</span><div><h3>海女包饭</h3><strong>咸德路 · 朝天邑</strong><p>小红书济州美食清单中的东线选择，适合排在咸德海边行程前后。</p></div><a href="https://www.google.com/maps/search/?api=1&query=Hamdeok%20Jeju%20haenyeo%20restaurant" target="_blank" rel="noreferrer">↗</a></article>
+          <article><span>05</span><div><h3>带鱼锅</h3><strong>涯月 / 济州市</strong><p>最适合四人分享的济州料理之一，可选择含鲍鱼、配菜和米饭的四人套餐。</p></div><a href="https://www.google.com/maps/search/?api=1&query=Aewol%20Jeju%20cutlassfish" target="_blank" rel="noreferrer">↗</a></article>
+          <article><span>06</span><div><h3>传统市场小吃</h3><strong>东门市场 / 每日偶来市场</strong><p>一起分食五味子年糕、橘子甜品与烤海鲜，也方便一次买齐伴手礼。</p></div><a href="https://www.google.com/maps/search/?api=1&query=Dongmun%20Market%20Jeju" target="_blank" rel="noreferrer">↗</a></article>
+        </div>
+      </section>
+
+      <section class="views-section" id="views">
+        <div class="section-heading"><p class="kicker">收藏济州风景</p><h2>把这三幅风景排进行程。</h2></div>
+        <div class="view-grid">
+          <figure class="view-large"><img src="seongsan-aerial.webp" alt="城山日出峰航拍景色" /><figcaption><span>01</span><div><strong>城山日出峰</strong><small>日出 · 东线</small></div></figcaption></figure>
+          <figure><img src="jeju-view-2.webp" alt="济州玄武岩海岸与蓝色海水" /><figcaption><span>02</span><div><strong>火山海岸</strong><small>散步 · 吹海风</small></div></figcaption></figure>
+          <div class="view-note"><span>天气原则</span><p>把牛岛或汉拿山安排在天气最好的一天。渡轮和登顶受天气影响，请准备咖啡馆与市场作为备选。</p></div>
+        </div>
+      </section>
+
+      <section class="practical-section">
+        <div><p class="kicker">四人出行提示</p><h2>提前做好小选择，旅行更顺。</h2></div>
+        <ul>
+          <li><span>01</span><p><b>市区短程：</b>可用 Kakao T 叫大型出租车；四人分摊车费，带行李时尤其方便。</p></li>
+          <li><span>02</span><p><b>跨区域一日游：</b>四人包车通常最省时间，预订时确认车辆能坐四人并放下全部行李。</p></li>
+          <li><span>03</span><p><b>随身物品：</b>防风外套、折叠伞、小垃圾袋与牙刷；可由四人分工携带公共用品。</p></li>
+          <li><span>04</span><p><b>每天出发前：</b>再次确认渡轮、步道预约、营业时间与天气，并把集合地点发到四人群聊。</p></li>
+        </ul>
+      </section>
+
+      <section class="sources-section">
+        <p>资料说明：本页为旅行建议整理，并非赞助排名。小红书热度来自 2026 年 7 月 23 日的公开搜索结果，事实信息尽量结合济州官方旅游资料核对；预订前请再次确认最新价格与营业状态。</p>
+        <div><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%B5%8E%E5%B7%9E%E5%B2%9B%E6%94%BB%E7%95%A5" target="_blank" rel="noreferrer">小红书搜索 ↗</a><a href="https://www.visitjeju.net/en" target="_blank" rel="noreferrer">济州官方旅游网 ↗</a></div>
+      </section>
+
+      <footer>
+        <div class="footer-word">济州</div>
+        <div class="footer-row"><p>为四位旅伴准备的好风景、好住宿与好味道。</p><button data-share>分享四人行程 ↗</button></div>
+      </footer>
+    </main>
+  </body>
+</html>
