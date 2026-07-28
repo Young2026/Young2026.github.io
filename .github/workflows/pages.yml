@@ -25,12 +25,9 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp index.html styles.css app.js _site/
+          cp index.html styles.css app.js image-*.js _site/
           touch _site/.nojekyll
-          base="https://jeju-field-notes.tristaforyoung.chatgpt.site"
-          for asset in jeju-hero.webp jeju-view-1.webp jeju-view-2.webp jeju-view-3.webp jeju-view-4.webp seongsan-aerial.webp og.png; do
-            curl --fail --location --retry 3 "$base/$asset" --output "_site/$asset"
-          done
+          base64 --decode og-itinerary.b64 > _site/og-itinerary.jpg
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
